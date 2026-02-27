@@ -1,9 +1,10 @@
 function checkForSpam(message) {
   const ban1 = 'spam';
   const ban2 = 'sale';
-  if (message.toLowerCase().includes(ban1)) {
+  const pop = message.toLowerCase();
+  if (pop.includes(ban1)) {
     return true;
-  } else if (message.toLowerCase().includes(ban2)) {
+  } else if (pop.includes(ban2)) {
     return true;
   } else {
     return false;
